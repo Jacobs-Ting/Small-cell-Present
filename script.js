@@ -93,7 +93,7 @@ const modules = [
     ],
     smallCell: ["Power Module", "DC/DC Converter", "Power Sequencing", "PDN Design"],
     concepts: ["Power Integrity", "Power Sequence", "Ripple", "Load Transient", "Efficiency"],
-    experience: ["PMIC debug", "Rail validation", "Power-up sequencing", "Noise coupling analysis"],
+    experience: ["PMIC noise debug", "PDN layout review", "Power-up sequencing", "Noise coupling analysis"],
     gap: ["48V distribution safety", "PoE budget and classification"],
     talking: ["The voltage source changes, but rail integrity and sequence risk management remain core hardware skills."]
   },
@@ -114,7 +114,7 @@ const modules = [
       }
     ],
     smallCell: ["Heat Sink", "Heat Pipe", "Outdoor", "Fan"],
-    concepts: ["Heat Transfer", "Junction Temperature", "Thermal Resistance", "Power Dissipation", "Derating"],
+    concepts: ["Heat Transfer", "Junction Temperature", "Thermal Resistance", "Power Dissipation"],
     experience: ["PA Thermal Debug", "APT / PA Optimization", "RF-ME Collaboration", "Thermal vs RF Correlation"],
     gap: ["Outdoor enclosure thermal model", "Fan curve and acoustic tradeoffs"],
     talking: ["Compact-device thermal experience is a strong base for managing junction temperature and reliability margin."]
@@ -142,7 +142,7 @@ const modules = [
     ],
     smallCell: ["FCC", "CE", "NEBS", "OTA", "EMC"],
     concepts: ["EVT", "DVT", "PVT", "MP", "Validation Flow"],
-    experience: ["Certification planning", "Test coverage", "Issue triage", "Factory readiness"],
+    experience: ["Certification planning", "Test Plan definition", "Issue tracking and fix", "Factory readiness"],
     gap: ["NEBS requirements", "Small cell OTA and EMC specifics"],
     talking: ["A staged validation mindset reduces late surprises across both smartphone and small cell programs."]
   },
@@ -189,8 +189,8 @@ const modules = [
     profileText: "With over 17+ years of hands-on experience in RF hardware design, I specialize in the system architecture, simulation, and troubleshooting of high-end wireless devices including 5G handhelds, IoT gateways, and wearables. I have a proven track record of leading cross-functional teams, resolving critical EMI/EMC issues, and successfully boosting mass production yields from NPI to MP phases. Driven by a passion for innovation, I am currently dedicated to evaluating and developing AI-assisted RF design tools, pioneering the next generation of highly automated and efficient hardware development workflows.",
     smartphone: ["17+ years RF experience", "Smartphone", "IoT", "Bluetooth", "5G"],
     smallCell: ["FA", "Certification", "AI Side Projects", "Hardware Leadership"],
-    concepts: ["RF depth", "Debug discipline", "Certification ownership", "Cross-functional communication"],
-    experience: ["Smartphone RF", "IoT and Bluetooth", "5G exposure", "Failure analysis", "AI side projects"],
+    concepts: ["RF systemd design", "RF System debug ", "Certification ownership", "Cross-functional communication"],
+    experience: ["Smartphone RF", "IoT and Bluetooth", "5G NR", "Failure analysis", "AI side projects"],
     gap: ["Small cell system architecture", "Infrastructure network timing"],
     talking: ["My strength is connecting detailed RF engineering with practical program execution and fast technical learning."],
     special: "profile"
