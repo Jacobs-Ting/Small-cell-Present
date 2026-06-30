@@ -291,6 +291,21 @@ function renderFeatureCards() {
 }
 
 function moduleMarkup(module) {
+  if (module.special === "gap") {
+    return `
+      <section class="module page-section" id="${module.id}" data-search="${Object.values(module).flat().join(" ").toLowerCase()}">
+        <div class="module-title">
+          <div>
+            <p class="eyebrow">${module.nav}</p>
+            <h2>${module.title}</h2>
+            <p>${module.summary}</p>
+          </div>
+        </div>
+        ${specialBlock(module)}
+      </section>
+    `;
+  }
+
   if (module.special === "profile") {
     return `
       <section class="module page-section about-module" id="${module.id}" data-search="${Object.values(module).flat().join(" ").toLowerCase()}">
@@ -309,7 +324,6 @@ function moduleMarkup(module) {
           <div class="panel"><h3>Common Engineering Concepts</h3>${list(module.concepts)}</div>
           <div class="panel"><h3>My Experience</h3>${list(module.experience)}</div>
           <div class="panel"><h3>Knowledge Gap</h3>${list(module.gap)}</div>
-          <div class="panel"><h3>Interview Talking Points</h3>${list(module.talking)}</div>
         </div>
       </section>
     `;
@@ -348,7 +362,6 @@ function moduleMarkup(module) {
         <div class="panel"><h3>Common Engineering Concepts</h3>${list(module.concepts)}</div>
         <div class="panel"><h3>My Experience</h3>${list(module.experience)}</div>
         <div class="panel"><h3>Knowledge Gap</h3>${list(module.gap)}</div>
-        <div class="panel"><h3>Interview Talking Points</h3>${list(module.talking)}</div>
       </div>
       <div class="expanded-content detail-grid">
         ${(module.expandedDetails || [
