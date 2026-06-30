@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technology Transfer Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=single-module-2">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="icon-button menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <a class="brand" href="#overview" data-page-link data-target="overview" aria-label="Technology Transfer Dashboard home">
+        <span class="brand-mark">TT</span>
+        <span>
+          <strong>Technology Transfer</strong>
+          <small>Hardware Design Review Dashboard</small>
+        </span>
+      </a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span class="sun">Light</span>
+        <span class="moon">Dark</span>
+      </button>
+    </header>
+
+    <aside class="sidebar" id="sidebar" aria-label="Primary navigation">
+      <nav id="navList"></nav>
+    </aside>
+
+    <main class="main">
+      <section class="overview-page page-section" id="overview">
+        <div class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Interactive Technical Portfolio</p>
+          <h1>Technology Transfer Dashboard</h1>
+          <p class="subtitle">Smartphone Platform <span>→</span> Small Cell Platform</p>
+          <p class="hero-description">A professional engineering dashboard for explaining how RF, platform integration, certification, manufacture, debug, and leadership experience transfer into 5G small cell hardware programs.</p>
+          <div class="hero-actions">
+            <a class="primary-action" href="#rf-architecture" data-page-link data-target="rf-architecture">Start Review</a>
+            <a class="secondary-action" href="#gap-analysis" data-page-link data-target="gap-analysis">View Gap Analysis</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Animated platform transfer diagram">
+          <svg viewBox="0 0 640 420" role="img">
+            <defs>
+              <linearGradient id="chipGradient" x1="0" x2="1">
+                <stop offset="0" stop-color="#0b5cab"/>
+                <stop offset="1" stop-color="#00a3ff"/>
+              </linearGradient>
+            </defs>
+            <rect x="42" y="68" width="188" height="284" rx="28" class="device"/>
+            <rect x="410" y="56" width="188" height="308" rx="16" class="cell"/>
+            <rect x="88" y="126" width="96" height="112" rx="10" fill="url(#chipGradient)"/>
+            <rect x="454" y="126" width="100" height="116" rx="10" fill="url(#chipGradient)"/>
+            <path d="M250 210h128" class="flow-line"/>
+            <path d="M370 188l32 22-32 22" class="flow-arrow"/>
+            <g class="packet p1"><circle cx="286" cy="210" r="7"/></g>
+            <g class="packet p2"><circle cx="322" cy="210" r="7"/></g>
+            <path d="M105 270c42 34 86 34 132 0M432 278c44 38 96 38 142 0" class="wave"/>
+            <text x="136" y="330" text-anchor="middle">Smartphone</text>
+            <text x="504" y="330" text-anchor="middle">Small Cell</text>
+          </svg>
+        </div>
+        </div>
+        <section class="feature-grid" id="featureCards" aria-label="Dashboard modules"></section>
+      </section>
+
+      <div id="aboutContainer"></div>
+      <div id="hardwareContainer"></div>
+      <div id="moduleContainer"></div>
+    </main>
+  </div>
+
+  <footer>
+    <strong>Technology Transfer Portfolio</strong>
+    <span>Created using AI</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+  </footer>
+
+  <script src="script.js?v=leadership-soft-skills-2"></script>
+</body>
+</html>
